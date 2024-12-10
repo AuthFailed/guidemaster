@@ -7,53 +7,27 @@
 import type { SupportedLanguage } from "src/utils/i18n";
 
 export default {
-    "en": {
+    "ru": {
         "site.title": {
-            text: "Astro Theme Cody"
+            text: "ГайдМастер НЦК"
         },
         "site.description": {
-            text: "A minimalist blog theme built with Astro. A quick and easy starter build for anyone who wants to start their own blog."
+            text: "Инструкции на самые разные темы :)"
         },
         "profile.description": {
-            text: "your bio description"
+            text: "Гений, миллиардер, плэйбой, филантроп"
         },
         "blog.lastUpdated": {
-            text: "Last updated:"
+            text: "Последнее обновление:"
         },
         "sidebar.tableOfContents": {
-            text: "Table of Contents"
+            text: "Таблица контента"
         },
         "project.platform": {
             text: "PLATFORM"
         },
         "project.stack": {
             text: "STACK"
-        },
-        "project.website": {
-            text: "WEBSITE"
-        }
-    },
-    "es": {
-        "site.title": {
-            text: "Astro Theme Cody"
-        },
-        "site.description": {
-            text: "Un tema de blog minimalista creado con Astro. Un tema de inicio rápido y sencillo para cualquiera que quiera crear su propio blog."
-        },
-        "profile.description": {
-            text: "tu descripción biográfica"
-        },
-        "blog.lastUpdated": {
-            text: "Última actualización:"
-        },
-        "sidebar.tableOfContents": {
-            text: "Tabla de contenidos"
-        },
-        "project.platform": {
-            text: "PLATAFORMA"
-        },
-        "project.stack": {
-            text: "PILA"
         },
         "project.website": {
             text: "WEBSITE"

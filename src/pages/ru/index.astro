@@ -14,59 +14,36 @@ const MAX_POSTS = 10;
 const allPosts = await getAllPosts();
 const allPostsByDate = sortMDByDate(allPosts);
 const allPostsByPinned = sortMDByPinned(allPostsByDate);
-const filteredPostsByLanguage = filterByLanguage(allPostsByPinned, "en").slice(0, MAX_POSTS);
+const filteredPostsByLanguage = filterByLanguage(allPostsByPinned, "ru").slice(0, MAX_POSTS);
 
 const tech: Array<{ title: string; desc: string; href: string }> = [
 	{
 		title: "Astro",
-		desc: "Build fast websites, faster.",
+		desc: "Фреймворк сайта.",
 		href: "https://astro.build",
 	},
 	{
-		title: "Astro Assets",
-		desc: "Built-in optimized asset support.",
-		href: "https://docs.astro.build/en/guides/assets/",
-	},
-	{
 		title: "Tailwind CSS",
-		desc: "Rapidly build modern websites without ever leaving your HTML.",
+		desc: "Оформление и стиль сайта.",
 		href: "https://tailwindcss.com",
-	},
-	{
-		title: "Markdown",
-		desc: "Simple and easy-to-use markup language.",
-		href: "https://www.markdownguide.org/",
-	},
-	{
-		title: "MDX",
-		desc: "Markdown for the component era.",
-		href: "https://mdxjs.com/",
-	},
-	{
-		title: "Astro Icon",
-		desc: "An easy to use Icon component for Astro.",
-		href: "https://github.com/natemoo-re/astro-icon#readme",
 	},
 ];
 ---
 
-<BaseLayout title="Home">
+<BaseLayout title="Домашняя">
 	<section>
-		<h1 class="title">Hello World</h1>
+		<h1 class="title">Привет, мир</h1>
 		<p class="mb-4 sm:mb-8">
-			Hey guys! This a theme for Astro. You can use this to as personal
-			blog or portfolio. If you want to know more about how you can
-			customise and make it your own, click on the github icon link below,
-			and it will take you to the repo.
+			Привет! Это - ГайдМастер. Инструмент, который научит тебя рабочим тонкостям и сложным моментам
+			<br/>
+			Воспользуйся верхним меню или списком постов ниже для просмотра постов
+			<br/><br/>
+			Если у тебя есть идея для поста - ты всегда можешь написать в <a href="https://t.me/+jH1mblw0ytcwOWUy" target="_blank">канал (кликабельно)</a> или в <a href="https://t.me/roman_domru" target="_blank">личку разработчику (кликабельно)</a>
 		</p>
-		<div>
-			<span>You can find me on: </span>
-			<SocialMediaLinks />
-		</div>
 	</section>
 
 	<section class="mt-8 sm:mt-16">
-		<h2 class="title">Posts</h2>
+		<h2 class="title">Посты</h2>
 		<ul class="space-y-4 sm:space-y-2">
 			{
 				filteredPostsByLanguage.map((p) => (
@@ -77,7 +54,7 @@ const tech: Array<{ title: string; desc: string; href: string }> = [
 	</section>
 
 	<section class="mt-16">
-		<h2 class="title">Technologies</h2>
+		<h2 class="title">Технологии инструмента</h2>
 		<ul class="space-y-4 sm:space-y-2">
 			{
 				tech.map(({ href, title, desc }) => (

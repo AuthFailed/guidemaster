@@ -45,7 +45,7 @@ interface Props {
 const { page, tags } = Astro.props;
 
 const meta = {
-	title: "Posts",
+	title: "Посты",
 	description: "Read my collection of posts and the things that interest me",
 };
 
@@ -53,13 +53,13 @@ const paginationProps = {
 	...(page.url.prev && {
 		prevUrl: {
 			url: page.url.prev,
-			text: `← Previous Posts`,
+			text: `← Предыдущие посты`,
 		},
 	}),
 	...(page.url.next && {
 		nextUrl: {
 			url: page.url.next,
-			text: `Next Posts →`,
+			text: `Следующие посты →`,
 		},
 	}),
 };
@@ -67,7 +67,7 @@ const paginationProps = {
 
 <BaseLayout {...meta}>
 	<section class="cody-bg">
-		<h1 class="title">Posts</h1>
+		<h1 class="title">Посты</h1>
 		<ul class="flex flex-col gap-4">
 			{page.data.map((post) => <PostPreview post={post} withDesc />)}
 		</ul>
@@ -107,7 +107,7 @@ const paginationProps = {
 				<a
 					href="/tags"
 					class="cody-link"
-					aria-label="View all blog tags"
+					aria-label="Посмотреть все теги"
 				>
 					See more ->
 				</a>
