@@ -19,12 +19,12 @@ const filteredPostsByLanguage = filterByLanguage(allPostsByPinned, "ru").slice(0
 const tech: Array<{ title: string; desc: string; href: string }> = [
 	{
 		title: "Astro",
-		desc: "Фреймворк сайта.",
+		desc: "Site framework.",
 		href: "https://astro.build",
 	},
 	{
 		title: "Tailwind CSS",
-		desc: "Оформление и стиль сайта.",
+		desc: "Website design and style.",
 		href: "https://tailwindcss.com",
 	},
 ];
@@ -32,13 +32,13 @@ const tech: Array<{ title: string; desc: string; href: string }> = [
 
 <BaseLayout title="Домашняя">
 	<section>
-		<h1 class="title">Привет, мир</h1>
+		<h1 class="title">Hello, world.</h1>
 		<p class="mb-4 sm:mb-8">
-			Привет! Это - ГайдМастер. Инструмент, который научит тебя рабочим тонкостям и сложным моментам
+			Hi, this is GuideMaster. A tool that will teach you the working subtleties and complex moments
 			<br/>
-			Воспользуйся верхним меню или списком постов ниже для просмотра постов
+			Use the top menu or the list of posts below to view posts
 			<br/><br/>
-			Если у тебя есть идея для поста - ты всегда можешь написать в <a href="https://t.me/+jH1mblw0ytcwOWUy" target="_blank">канал (кликабельно)</a> или в <a href="https://t.me/roman_domru" target="_blank">личку разработчику (кликабельно)</a>
+			If you have an idea for a post - you can always write one in <a href="https://t.me/+jH1mblw0ytcwOWUy" target="_blank">telegram channel (clickable)</a> or in <a href="https://t.me/roman_domru" target="_blank">dm (clickable)</a>
 		</p>
 	</section>
 
@@ -54,7 +54,7 @@ const tech: Array<{ title: string; desc: string; href: string }> = [
 	</section>
 
 	<section class="mt-16">
-		<h2 class="title">Технологии инструмента</h2>
+		<h2 class="title">Tool technologies</h2>
 		<ul class="space-y-4 sm:space-y-2">
 			{
 				tech.map(({ href, title, desc }) => (
@@ -74,3 +74,4 @@ const tech: Array<{ title: string; desc: string; href: string }> = [
 		</ul>
 	</section>
 </BaseLayout>
+

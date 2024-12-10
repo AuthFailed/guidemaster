@@ -13,7 +13,8 @@ export default defineConfig({
   i18n: {
     defaultLocale: "ru",
     locales: [
-        "ru"
+        "ru",
+        "en"
     ]
   },
   markdown: {

@@ -24,6 +24,29 @@ export default {
             slug: "archive"
         },
         "tags": {
+            text: "Теги",
+            slug: "tags"
+        },
+        "series": {
+            text: "Серии",
+            slug: "series"
+        }
+    },
+    "en": {
+        "home": {
+            text: "Home",
+            slug: ""
+        },
+        "blog": {
+            text: "Blog",
+            slug: "blog",
+            route: "/blog/pages/1"
+        },
+        "archive": {
+            text: "Archive",
+            slug: "archive"
+        },
+        "tags": {
             text: "Tags",
             slug: "tags"
         },
