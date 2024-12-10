@@ -14,10 +14,6 @@ export default {
             text: "Главная",
             slug: ""
         },
-        "about": {
-            text: "О проекте",
-            slug: "about"
-        },
         "blog": {
             text: "Блог",
             slug: "blog",
